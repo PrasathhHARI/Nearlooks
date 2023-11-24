@@ -7,6 +7,9 @@
     list-style: none;
     scroll-behavior: smooth;
 }
+body{
+  background-image: linear-gradient(to right, rgb(15, 15, 15) 0%, #11387b 100%);
+}
 
 header{
     position:fixed;
@@ -25,10 +28,12 @@ header{
 }
 
 .logo{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     letter-spacing: 1px;
-    color:white;
+    color:#fff;
+    border-radius: 5px;
+    border: 1px solid white;
 }
 .navbar{
     display: flex;
@@ -62,7 +67,6 @@ section{
 .header-list-side {
     display: flex;
     text-wrap: nowrap;
-    /* justify-content: flex-end; */
     margin-left: 30px;
   }
 .header-list-side #us,
@@ -140,7 +144,6 @@ section{
     color: aliceblue;
     background-color: rgb(67, 67, 206);
   }
-
   #inpart #in {
     width: 340px;
     height: 45px;
@@ -152,6 +155,9 @@ section{
   #but1{
     position: relative;
     right: 40px;
+    bottom: -5px;
+    color: green;
+    font-size: 25px;
   }
 
   .hometxt #stxt-1 {
@@ -169,8 +175,6 @@ section{
     right: 50px;
      
   }
-  
-
   .hometxt #im1:hover{
     opacity: 0.4; 
   }
@@ -226,12 +230,19 @@ section{
       background-color: rgb(67, 67, 206);
     }
   
+    #imgdiv  {
+      position: relative;
+      height: 400px;
+      bottom: 30px;
+      right: -90px;
+      padding: 20px; 
+    }
+   
     #inpart{
       margin-top: 10px;
     }
 
     #inpart #in {
-      
       width: 340px;
       height: 45px;
       border: none;
@@ -249,8 +260,7 @@ section{
       height: 400px;
       bottom: 430px;
       right: 70px;
-      padding: 20px;
-       
+      padding: 20px; 
     }
    
     #home{
@@ -264,12 +274,76 @@ section{
       grid-template-columns: repeat(1,1fr);
       align-items: center;
   }
+  br{
+    display: none;
+  }
 }
-   @media (max-width: 674px){
-    body{
-      background-image: linear-gradient(to right, rgb(15, 15, 15) 0%, #11387b 100%);
-    }
 
+@media (max-width:768px)
+{
+  .hometxt{
+    width: 100%;
+    height: 400px;
+ }
+ .hometxt #btxt{
+   font-size: 2.8rem;
+   line-height: 1;
+   color: white;
+   letter-spacing: 4px;
+   margin-bottom: 10px;
+ }
+ .hometxt #bbtxt{
+   font-size: 1.9rem;
+   font-family: "Lato", sans-serif;
+   line-height: 0.9;
+   color: rgb(222, 114, 114);
+   margin-bottom: 40px;
+ }
+ 
+ .hometxt p{
+   color:white;
+   font-size:20px;
+   font-weight: 400;
+   line-height:25px;
+   margin-bottom: -20px;
+   text-align: justify;
+ }
+ #imgdiv  {
+  position: relative;
+  height: 400px;
+  bottom: 150px;
+  right: -90px;
+  padding: 20px;
+   
+}
+#inpart{
+  position: relative;
+  top: -110px;
+  left: 10px;
+} 
+
+   br{
+     display: none;
+   }
+}
+@media (max-width: 755px){
+  #inpart {
+    position: relative;
+    top: -130px;
+    left: 10px;
+   
+  } 
+  #imgdiv{
+    position: relative;
+    height: 400px;
+    bottom: 210px;
+    right: -90px;
+    padding: 20px;
+
+  }
+}
+   @media (max-width: 726px){
+   
     #home{
       background: url('images/bimg.jpeg');
       background-size: cover;
@@ -293,6 +367,7 @@ section{
    }
    #home{
     height:80vh;
+    width: 100%;
    }
    .navbar{
     position: absolute;
@@ -338,21 +413,13 @@ section{
     position: relative;
     right: 40px;
   }
-  #imgdiv  {
-    position: relative;
-    height: 400px;
-    bottom: 150px;
-    right: 30px;
-    padding: 20px;
-     
-  }
 
 .hometxt{
-   width: 200px;
+   width: 100%;
    height: 400px;
 }
 .hometxt #btxt{
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1;
   color: white;
   letter-spacing: 4px;
@@ -368,14 +435,30 @@ section{
 
 .hometxt p{
   color:white;
-  font-size:10px;
+  font-size:20px;
   font-weight: 400;
-  line-height:20px;
-  margin-bottom: 50px;
+  line-height:25px;
+  margin-top: -10px;
 }
-
+#imgdiv  {
+  position: relative;
+  height: 400px;
+  bottom: 210px;
+  right: -50px;
+  padding: 20px;
+   
+}
+#inpart{
+  position: relative;
+  top: -140px;
+  left: 35px;
+} 
+  br{
+    display: none;
+  }
  }
- @media  (max-width: 523px)
+ 
+ @media  (max-width: 564px)
  {
   body{
     background-image: linear-gradient(to right, rgb(15, 15, 15) 0%, #11387b 100%);
@@ -398,9 +481,6 @@ section{
     font-weight: 600;
     letter-spacing: 1px;
     color:white;
-    /* position: relative;
-    left: -150px; */
-    
 }
 #btn {
   width: 110px;
@@ -413,7 +493,7 @@ section{
 }
 
 #inpart #in {
-  width: 220px;
+  width: 260px;
   height: 45px;
   border: none;
   background-color: aliceblue;
@@ -445,4 +525,226 @@ section{
 .open{
   right: 0;
 }
+
+.hometxt{
+  margin-left: -40px;
+}
+#imgdiv  {
+  position: relative;
+  height: 400px;
+  bottom: 230px;
+  right: -20px;
+  padding: 20px;
+   
+}
+#inpart{
+  position: relative;
+  top: -150px;
+  left: 35px;
+} 
+
  }
+ @media (max-width:500px){
+  body{
+    background-image: linear-gradient(to right, rgb(15, 15, 15) 0%, #11387b 100%);
+  }
+  #menu-icons{
+    display: block;
+    position: absolute;
+    right:20px;
+    top: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+   }
+   .header-list-side{
+      display: none;
+   }
+
+.navbar{
+ position: absolute;
+ top: 0;
+ right: -100%;
+ width: 270px;
+ height: 120vh;
+ background: #11387b;
+ display: flex;
+ flex-direction: column;
+ padding: 120px 30px;
+ transition: 0.5s all;
+}
+.navbar a{
+  color: #fff;
+ display: block;
+ margin: 1.2rem 0;
+}
+.open{
+  right: 0;
+}
+
+.hometxt{
+ margin-right: 15px;
+}
+.hometxt #btxt{
+  font-size: 2rem;
+  line-height: 1;
+  color: white;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.hometxt #bbtxt{
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  line-height: 0.9;
+  color: rgb(222, 114, 114);
+  margin-bottom: 40px;
+}
+
+.hometxt p{
+  width: 390px;
+  color:white;
+  font-size:20px;
+  font-weight: 400;
+  line-height:25px;
+  margin-top: -10px;
+  
+}
+#inpart{
+  position: relative;
+  top: -160px;
+  left: 10px;
+} 
+#inpart #in{
+  width: 260px;
+}
+
+  br{
+    display: none;
+  }
+     
+ }
+@media (max-width: 425px){
+  .hometxt{
+    width: 350px;
+    height: 400px;
+    margin-top: 10px;
+    text-align: center;
+ }
+ .hometxt #btxt{
+   font-size: 2rem;
+   color: #fff;
+ }  
+ .hometxt #bbtxt{
+   font-size: 1.2rem;
+   font-family: "Lato", sans-serif;
+   line-height: 0.9;
+   color: rgb(222, 114, 114);
+   margin-bottom: 40px;
+ }
+ 
+ .hometxt p{
+   width: 345px;
+   color:white;
+   font-size:20px;
+   font-weight: 400;
+   line-height:23px;
+   margin-bottom: 50px;
+   text-align: justify;
+ }
+#imgdiv  {
+  position: relative;
+  height: 400px;
+  bottom: 200px;
+  right: 20px;
+  padding: 20px;
+   
+}
+#inpart{
+  position: relative;
+  top: -130px;
+  left: 10px;
+} 
+#inpart #in{
+  width: 260px;
+}
+#btn{
+  margin-left: -10px;
+width: 80px;
+}
+ br{
+  display:none;
+ }
+    
+}
+@media (max-width: 375px){
+  .hometxt{
+    width: 300px;
+    height: 400px;
+    margin-top: 10px;
+    text-align: center;
+ }
+ 
+ .hometxt p{
+  width: 300px;
+   color:#fff;
+   font-size:20px;
+   font-weight: 400;
+   line-height:23px;
+   margin-bottom: 50px;
+   text-align: justify;
+ }
+ #imgdiv  {
+  position: relative;
+  height: 400px;
+  bottom: 180px;
+  right: 30px;
+  padding: 20px;
+   
+}
+#inpart{
+  position: relative;
+  top: -110px;
+  left: 10px;
+} 
+#inpart #in{
+      width: 200px;
+}
+#btn{
+  margin-left: -3px;
+  width: 60px;
+ }
+ br{
+  display:none;
+ }
+    
+}
+@media (max-width:320px)
+{
+  .hometxt p{
+    width: 280px;
+     color:#fff;
+     font-size:20px;
+     font-weight: 400;
+     line-height:23px;
+     margin-bottom: 50px;
+     text-align: justify;
+   }
+
+   #imgdiv #im1{
+      margin-top: 18px;
+      height: 350px;
+   }
+   #inpart{
+      position: relative;
+      top: -130px;
+      left: 10px;
+   }
+   #inpart #in{
+      width: 160px;
+   }
+   #btn{
+    margin-left: -5px;
+    width: 80px;
+   }
+   
+}
